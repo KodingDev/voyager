@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "voyager",
+  "version": "${version}",
+  "name": "Voyager",
+  "description": "Utilities for developing on the Hubble network",
+  "authors": [
+    "HubbleMC"
+  ],
+  "contact": {
+    "website": "https://zerite.dev"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/voyager/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "gg.hubblemc.voyager.Voyager"
+    ]
+  },
+  "mixins": [
+    "voyager.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
