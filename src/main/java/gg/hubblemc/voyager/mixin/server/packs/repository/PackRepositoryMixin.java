@@ -33,7 +33,7 @@ public class PackRepositoryMixin {
         String property = System.getProperty("voyager.repo-folders");
         if (property == null) return;
 
-        for (String path : property.split(";")) {
+        for (String path : property.split(File.pathSeparator)) {
             Voyager.LOGGER.info("Adding pack repository folder: " + path);
             sources.add(new FolderRepositorySource(new File(path), PackSource.BUILT_IN));
         }
