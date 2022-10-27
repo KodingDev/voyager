@@ -52,7 +52,6 @@ tasks {
     }
 
     remapJar {
-        dependsOn("build")
         archiveClassifier.set(null as String?)
     }
 
